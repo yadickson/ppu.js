@@ -1,0 +1,32 @@
+{
+  "name": "ppu.js",
+  "version": "0.0.1",
+  "description": "Utilitario de validacion para Placa Patente Unica",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --all --reporter=cobertura --reporter=lcov --reporter=html --reporter=text npm run mocha",
+    "mocha": "rimraf coverage && mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yadickson/ppu.js.git"
+  },
+  "keywords": [
+    "ppu",
+    "chile",
+    "patente",
+    "placa"
+  ],
+  "author": "Yadickson Soto",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/yadickson/ppu.js/issues"
+  },
+  "homepage": "https://github.com/yadickson/ppu.js#README.md",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2",
+    "nyc": "^15.0.1",
+    "rimraf": "^3.0.2"
+  }
+}

@@ -1,0 +1,13 @@
+.vscode/*
+node_modules/
+package-lock.json
+**/.env
+ecosystem.config.js
+test/POSTMAN/newman
+package-lock.json
+coverage
+*.log
+.nyc*
+eslint.txt
+index.fake.js
+.scannerwork/
