@@ -16,8 +16,14 @@ npm install --save ppu.js
 ```
 const ppuJs = require('ppu.js')
 
-console.log(ppuJs.carFormatValidator('aabb00')) // print false
+console.log(ppuJs.carFormatValidator('aabb00')) // print true
 console.log(ppuJs.carFormatValidator('ccbb00')) // print true
+
+console.log(ppuJs.oldCarFormatValidator('aabb00')) // print true
+console.log(ppuJs.oldCarFormatValidator('ccbb00')) // print true
+
+console.log(ppuJs.newCarFormatValidator('aabb00')) // print false
+console.log(ppuJs.newCarFormatValidator('ccbb00')) // print true
 
 ```
 
