@@ -70,6 +70,11 @@ describe('Test PPU validator', () => {
       const value = oldCarFormatValidator('bb00000')
       expect(value).to.be.equal(false)
     })
+
+    it('Validate from ABBB000 format, return false', () => {
+      const value = oldCarFormatValidator('ABBB000')
+      expect(value).to.be.equal(false)
+    })
   })
 
   describe('Validate New PPU Car', () => {
@@ -132,6 +137,11 @@ describe('Test PPU validator', () => {
       const value = newCarFormatValidator('bb00000')
       expect(value).to.be.equal(false)
     })
+
+    it('Validate from BBBB000 format, return false', () => {
+      const value = newCarFormatValidator('BBBB000')
+      expect(value).to.be.equal(false)
+    })
   })
 
   describe('Validate All PPU Car', () => {
@@ -192,6 +202,11 @@ describe('Test PPU validator', () => {
 
     it('Validate from bb00000 format, return false', () => {
       const value = carFormatValidator('bb00000')
+      expect(value).to.be.equal(false)
+    })
+
+    it('Validate from BBBB000 format, return false', () => {
+      const value = carFormatValidator('BBBB000')
       expect(value).to.be.equal(false)
     })
   })
